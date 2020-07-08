@@ -6,7 +6,7 @@ const jsonServer = require("json-server");
 const bodyParser = require('body-parser');
 const auth = require("./authMiddleware");
 const router = jsonServer.router("serverdata.json");
-const enableHttps = true;
+const enableHttps = false;
 const ssloptions = {}
 
 if (enableHttps) {
